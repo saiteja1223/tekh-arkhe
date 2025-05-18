@@ -21,8 +21,8 @@ function App() {
             <Route path="about" element={<AboutPage />} />
             <Route path="testimonials" element={<TestimonialsPage />} />
             <Route path="contact" element={<ContactPage />} />
-          <Route path="/login" element={<LoginPage />} />
           </Route>
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </AnimatePresence>
     </Router>

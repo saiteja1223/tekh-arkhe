@@ -149,7 +149,7 @@ const ServicesPage: React.FC = () => {
               to="/contact" 
               variant="secondary" 
               size="lg"
-              className="bg-white text-black hover:bg-gray-100"
+              className=" text-black hover:bg-gray-100"
             >
               Contact Our Team
             </Button>

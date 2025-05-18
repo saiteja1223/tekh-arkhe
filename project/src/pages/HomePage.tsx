@@ -154,7 +154,7 @@ const HomePage: React.FC = () => {
               to="/contact" 
               variant="secondary" 
               size="lg"
-              className="bg-white hover:bg-gray-500 text-black" 
+              className=" hover:bg-gray-500 text-black" 
             >
               Get Started Today
             </Button>

@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Button from '../components/ui/Button';
 import Logo from '../components/ui/Logo';
 
+
 interface LoginFormData {
   email: string;
   password: string;
@@ -49,6 +50,7 @@ const LoginPage: React.FC = () => {
     <div className="min-h-screen flex flex-col md:flex-row">
       {/* Left Side - Form */}
       <div className="w-full md:w-1/2 flex flex-col justify-center px-6 py-12 lg:px-8 bg-white">
+      <div><button className='absolute top-[5rem] left-[35rem]' onClick={() => window.history.back()}>🔙 </button></div>
         <motion.div 
           className="sm:mx-auto sm:w-full sm:max-w-sm"
           initial={{ opacity: 0, y: 20 }}
@@ -183,7 +185,7 @@ const LoginPage: React.FC = () => {
 
           <p className="mt-10 text-center text-sm text-gray-500">
             Don't have an account?{' '}
-            <a href="#" className="font-semibold leading-6 text-primary hover:text-primary-dark">
+            <a href="/contact" className="font-semibold leading-6 text-primary hover:text-primary-dark">
               Contact us to get started
             </a>
           </p>
@@ -192,6 +194,7 @@ const LoginPage: React.FC = () => {
       
       {/* Right Side - Image */}
       <div className="hidden md:block md:w-1/2 bg-gray-900 relative">
+       
         <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-dark opacity-90"></div>
         <img 
           src="https://images.pexels.com/photos/313691/pexels-photo-313691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 

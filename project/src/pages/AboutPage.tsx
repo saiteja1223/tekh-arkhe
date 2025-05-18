@@ -285,7 +285,8 @@ const AboutPage: React.FC = () => {
             <Button 
               to="/contact" 
               size="lg"
-              className="bg-white text-black hover:bg-gray-100"
+              variant="secondary" 
+              className=" text-black hover:bg-gray-100"
             >
               Get in Touch
             </Button>
